@@ -132,7 +132,7 @@ public inline val Duration.inDoubleDays: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntDays: Int
+public inline val Duration.inWholeIntDays: Int
   get() = toInt(DurationUnit.DAYS)
 
 
@@ -152,7 +152,7 @@ public inline val Duration.inDoubleHours: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntHours: Int
+public inline val Duration.inWholeIntHours: Int
   get() = toInt(DurationUnit.HOURS)
 
 /**
@@ -171,7 +171,7 @@ public inline val Duration.inDoubleMinutes: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntMinutes: Int
+public inline val Duration.inWholeIntMinutes: Int
   get() = toInt(DurationUnit.MINUTES)
 
 /**
@@ -190,7 +190,7 @@ public inline val Duration.inDoubleSeconds: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntSeconds: Int
+public inline val Duration.inWholeIntSeconds: Int
   get() = toInt(DurationUnit.SECONDS)
 
 /**
@@ -209,7 +209,7 @@ public inline val Duration.inDoubleMilliseconds: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntMilliseconds: Int
+public inline val Duration.inWholeIntMilliseconds: Int
   get() = toInt(DurationUnit.MILLISECONDS)
 
 /**
@@ -228,7 +228,7 @@ public inline val Duration.inDoubleMicroseconds: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntMicroseconds: Int
+public inline val Duration.inWholeIntMicroseconds: Int
   get() = toInt(DurationUnit.MICROSECONDS)
 
 /**
@@ -247,5 +247,5 @@ public inline val Duration.inDoubleNanoseconds: Double
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
 @ExperimentalTime
-public inline val Duration.inIntNanoseconds: Int
+public inline val Duration.inWholeIntNanoseconds: Int
   get() = toInt(DurationUnit.NANOSECONDS)
