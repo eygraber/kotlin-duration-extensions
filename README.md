@@ -88,4 +88,4 @@ In addition, the `Duration` properties that returned the value as a `Double` hav
 
 The new way to retrieve the value as a `Double` is to use `Duration.toDouble(DurationUnit)`. That can be a little verbose, so this library provides `Duration.inDouble*` functions.
 
-Since a lot of existing APIs accept and `Int` amount of milliseconds/seconds/etc, so this library also provides `Duration.inWholeInt*` functions.
+Since a lot of existing APIs accept an `Int` amount of milliseconds/seconds/etc, this library also provides `Duration.inWholeInt*` functions.
