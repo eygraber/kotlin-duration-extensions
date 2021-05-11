@@ -54,7 +54,7 @@ Extension properties are supplied on `Int`, `Long`, and `Double` to make creatin
 2.days
 ```
 
-There are also extension properties supplied on `Duration` to get the underlying value as a `Double` abd as `Int`:
+There are also extension properties supplied on `Duration` to get the underlying value as a `Double` and as an `Int`:
 
 ```kotlin
 val duration = 2.seconds
