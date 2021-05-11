@@ -127,7 +127,7 @@ public inline val Duration.inDoubleDays: Double
   get() = toDouble(DurationUnit.DAYS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of days.
+ * Returns the value of this duration expressed as an [Int] number of days.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
