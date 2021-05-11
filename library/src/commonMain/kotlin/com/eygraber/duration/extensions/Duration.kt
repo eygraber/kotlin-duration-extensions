@@ -147,7 +147,7 @@ public inline val Duration.inDoubleHours: Double
   get() = toDouble(DurationUnit.HOURS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of hours.
+ * Returns the value of this duration expressed as an [Int] number of hours.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
@@ -166,7 +166,7 @@ public inline val Duration.inDoubleMinutes: Double
   get() = toDouble(DurationUnit.MINUTES)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of minutes.
+ * Returns the value of this duration expressed as an [Int] number of minutes.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
@@ -185,7 +185,7 @@ public inline val Duration.inDoubleSeconds: Double
   get() = toDouble(DurationUnit.SECONDS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of seconds.
+ * Returns the value of this duration expressed as an [Int] number of seconds.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
@@ -204,7 +204,7 @@ public inline val Duration.inDoubleMilliseconds: Double
   get() = toDouble(DurationUnit.MILLISECONDS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of milliseconds.
+ * Returns the value of this duration expressed as an [Int] number of milliseconds.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
@@ -223,7 +223,7 @@ public inline val Duration.inDoubleMicroseconds: Double
   get() = toDouble(DurationUnit.MICROSECONDS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of microseconds.
+ * Returns the value of this duration expressed as an [Int] number of microseconds.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
@@ -242,7 +242,7 @@ public inline val Duration.inDoubleNanoseconds: Double
   get() = toDouble(DurationUnit.NANOSECONDS)
 
 /**
- * Returns the value of this duration expressed as a [Int] number of nanoseconds.
+ * Returns the value of this duration expressed as an [Int] number of nanoseconds.
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
