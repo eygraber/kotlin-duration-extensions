@@ -10,7 +10,7 @@ repositories {
   mavenCentral()
 }
 
-implementation 'com.eygraber:kotlin-duration-extensions:1.0.0'
+implementation 'com.eygraber:kotlin-duration-extensions:1.0.1'
 ```
 
 Kotlin
@@ -19,7 +19,7 @@ repositories {
   mavenCentral()
 }
 
-implementation("com.eygraber:kotlin-duration-extensions:1.0.0")
+implementation("com.eygraber:kotlin-duration-extensions:1.0.1")
 ```
 
 #### Snapshots
