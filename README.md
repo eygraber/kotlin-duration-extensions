@@ -1,6 +1,6 @@
 # Kotlin Duration Extensions
 
-[![Download](https://img.shields.io/maven-central/v/com.eygraber/kotlin-duration-extensions/1.0.1)](https://search.maven.org/artifact/com.eygraber/kotlin-duration-extensions)
+[![Download](https://img.shields.io/maven-central/v/com.eygraber/kotlin-duration-extensions/1.1.0)](https://search.maven.org/artifact/com.eygraber/kotlin-duration-extensions)
 
 ### Gradle
 
@@ -10,7 +10,7 @@ repositories {
   mavenCentral()
 }
 
-implementation 'com.eygraber:kotlin-duration-extensions:1.0.1'
+implementation 'com.eygraber:kotlin-duration-extensions:1.1.0'
 ```
 
 Kotlin
@@ -19,7 +19,7 @@ repositories {
   mavenCentral()
 }
 
-implementation("com.eygraber:kotlin-duration-extensions:1.0.1")
+implementation("com.eygraber:kotlin-duration-extensions:1.1.0")
 ```
 
 #### Snapshots
@@ -42,6 +42,8 @@ repositories {
 
 ### Usage
 
+#### Number extension properties
+
 Extension properties are supplied on `Int`, `Long`, and `Double` to make creating a `Duration` simpler:
 
 ```kotlin
@@ -54,7 +56,15 @@ Extension properties are supplied on `Int`, `Long`, and `Double` to make creatin
 2.days
 ```
 
-There are also extension properties supplied on `Duration` to get the underlying value as a `Double` and as an `Int`:
+##### Warning
+
+As of version 1.1.0 the above extension properties are removed from the library.
+
+This is because Kotlin 1.6.0 added support for them through the `kotlin.time.Duration.Companion.*` properties.
+
+#### Duration extension properties
+
+There are extension properties supplied on `Duration` to get the underlying value as a `Double` and as an `Int`:
 
 ```kotlin
 val duration = 2.seconds
@@ -78,13 +88,7 @@ duration.inWholeIntDays
 
 ### Rationale
 
-The `Int`, `Long`, and `Double` extension properties for creating a `Duration` [have been deprecated in Kotlin 1.5](https://blog.jetbrains.com/kotlin/2021/04/kotlin-1-5-0-rc-released/#duration-api-changes).
-
-There's been some discussion about it on the [Kotlin Slack channel](https://kotlinlang.slack.com/archives/C0922A726/p1618965104032100) and [the KEEP for Duration and time measurement API](https://github.com/Kotlin/KEEP/issues/190#issuecomment-778821179), and it seems unlikely that it will come back in the stdlib.
-
-This library brings them back 🎉
-
-In addition, the `Duration` properties that returned the value as a `Double` have been deprecated.  This is because `Duration` is now backed by a `Long`.
+The `Duration` properties that returned the value as a `Double` have been deprecated.  This is because `Duration` is now backed by a `Long`.
 
 The new way to retrieve the value as a `Double` is to use `Duration.toDouble(DurationUnit)`. That can be a little verbose, so this library provides `Duration.inDouble*` functions.
 
