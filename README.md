@@ -2,10 +2,6 @@
 
 [![Download](https://img.shields.io/maven-central/v/com.eygraber/kotlin-duration-extensions/1.0.1)](https://search.maven.org/artifact/com.eygraber/kotlin-duration-extensions)
 
-# Deprecated
-
-This library is no longer needed for Kotlin 1.6.0 and above, as [`Duration` factory extensions were added back then](https://youtrack.jetbrains.com/issue/KT-46229) (`kotlin.time.Duration.Companion.*`).
-
 ### Gradle
 
 Groovy
