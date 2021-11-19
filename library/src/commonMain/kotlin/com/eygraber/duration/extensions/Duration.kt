@@ -2,7 +2,6 @@ package com.eygraber.duration.extensions
 
 import kotlin.time.Duration
 import kotlin.time.DurationUnit
-import kotlin.time.ExperimentalTime
 
 /**
  * Returns the value of this duration expressed as a [Double] number of days.
@@ -10,7 +9,6 @@ import kotlin.time.ExperimentalTime
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleDays: Double
   get() = toDouble(DurationUnit.DAYS)
 
@@ -19,10 +17,8 @@ public inline val Duration.inDoubleDays: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntDays: Int
   get() = toInt(DurationUnit.DAYS)
-
 
 /**
  * Returns the value of this duration expressed as a [Double] number of hours.
@@ -30,7 +26,6 @@ public inline val Duration.inWholeIntDays: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleHours: Double
   get() = toDouble(DurationUnit.HOURS)
 
@@ -39,7 +34,6 @@ public inline val Duration.inDoubleHours: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntHours: Int
   get() = toInt(DurationUnit.HOURS)
 
@@ -49,7 +43,6 @@ public inline val Duration.inWholeIntHours: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleMinutes: Double
   get() = toDouble(DurationUnit.MINUTES)
 
@@ -58,7 +51,6 @@ public inline val Duration.inDoubleMinutes: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntMinutes: Int
   get() = toInt(DurationUnit.MINUTES)
 
@@ -68,7 +60,6 @@ public inline val Duration.inWholeIntMinutes: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleSeconds: Double
   get() = toDouble(DurationUnit.SECONDS)
 
@@ -77,7 +68,6 @@ public inline val Duration.inDoubleSeconds: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntSeconds: Int
   get() = toInt(DurationUnit.SECONDS)
 
@@ -87,7 +77,6 @@ public inline val Duration.inWholeIntSeconds: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleMilliseconds: Double
   get() = toDouble(DurationUnit.MILLISECONDS)
 
@@ -96,7 +85,6 @@ public inline val Duration.inDoubleMilliseconds: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntMilliseconds: Int
   get() = toInt(DurationUnit.MILLISECONDS)
 
@@ -106,7 +94,6 @@ public inline val Duration.inWholeIntMilliseconds: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleMicroseconds: Double
   get() = toDouble(DurationUnit.MICROSECONDS)
 
@@ -115,7 +102,6 @@ public inline val Duration.inDoubleMicroseconds: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntMicroseconds: Int
   get() = toInt(DurationUnit.MICROSECONDS)
 
@@ -125,7 +111,6 @@ public inline val Duration.inWholeIntMicroseconds: Int
  * An infinite duration value is converted either to [Double.POSITIVE_INFINITY] or [Double.NEGATIVE_INFINITY]
  * depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inDoubleNanoseconds: Double
   get() = toDouble(DurationUnit.NANOSECONDS)
 
@@ -134,6 +119,5 @@ public inline val Duration.inDoubleNanoseconds: Double
  *
  * An infinite duration value is converted either to [Int.MAX_VALUE] or [Int.MIN_VALUE] depending on its sign.
  */
-@ExperimentalTime
 public inline val Duration.inWholeIntNanoseconds: Int
   get() = toInt(DurationUnit.NANOSECONDS)
