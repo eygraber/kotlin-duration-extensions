@@ -11,7 +11,7 @@ jobs:
   publish_archives:
     strategy:
       matrix:
-        os: [macOS-latest, windows-latest]
+        os: [macOS-11, windows-latest]
 
     runs-on: ${{matrix.os}}
 
