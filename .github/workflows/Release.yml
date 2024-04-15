@@ -11,7 +11,7 @@ jobs:
   publish_archives:
     strategy:
       matrix:
-        os: [macOS-11, windows-latest]
+        os: [macOS-latest, windows-latest]
 
     runs-on: ${{matrix.os}}
 
@@ -32,7 +32,7 @@ jobs:
           validate-wrappers: true
 
       - name: Publish the artifacts
-        if: matrix.os == 'macOS-11'
+        if: matrix.os == 'macOS-latest'
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.SONATYPE_NEXUS_USERNAME }}
           ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.SONATYPE_NEXUS_PASSWORD }}
